@@ -1,0 +1,2 @@
+
+void initSignpost(Entity *e);

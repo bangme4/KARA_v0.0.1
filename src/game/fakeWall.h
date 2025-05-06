@@ -1,0 +1,2 @@
+
+void initFakeWall(Entity *e);

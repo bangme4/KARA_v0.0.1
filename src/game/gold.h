@@ -1,0 +1,2 @@
+
+void initGold(Entity *e);

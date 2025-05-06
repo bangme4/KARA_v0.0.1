@@ -1,0 +1,2 @@
+
+void initTrigger(Entity *e);

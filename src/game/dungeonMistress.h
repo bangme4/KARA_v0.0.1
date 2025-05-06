@@ -1,0 +1,2 @@
+
+void initDungeonMistress(Entity *e);

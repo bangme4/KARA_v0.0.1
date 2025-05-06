@@ -1,0 +1,2 @@
+
+void initBat(Entity *e);

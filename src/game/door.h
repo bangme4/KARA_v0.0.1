@@ -1,0 +1,2 @@
+
+void initDoor(Entity *e);

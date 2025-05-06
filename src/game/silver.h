@@ -1,0 +1,2 @@
+
+void initSilver(Entity *e);

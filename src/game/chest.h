@@ -1,0 +1,2 @@
+
+void initChest(Entity *e);

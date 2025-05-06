@@ -1,0 +1,2 @@
+
+void initGoblin(Entity *e);

@@ -1,0 +1,2 @@
+
+void initMerchant(Entity *e);
