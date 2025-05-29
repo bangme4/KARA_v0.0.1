@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-Project (adventure14)
+Project (kara)
 
 # Use absolute paths to SDL2 libraries
 set(SDL2_LIBRARY /opt/homebrew/Cellar/sdl2/2.32.4/lib/libSDL2.dylib)
