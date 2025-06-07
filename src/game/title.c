@@ -24,24 +24,35 @@ static SDL_Texture* backgroundTexture;
 
 void initTitle(void)
 {
-	logo1 = getAtlasImage("gfx/misc/logo1.png", 1);
-	logo2 = getAtlasImage("gfx/misc/logo2.png", 1);
+    logo1 = getAtlasImage("gfx/misc/logo1.png", 1);
+    logo2 = getAtlasImage("gfx/misc/logo2.png", 1);
 
-	SDL_Surface* background = IMG_Load("../assets/background.jpg");
+   	SDL_Surface* background = IMG_Load("assets/background.jpg");
+	if (!background) {
+		printf("IMG_Load Error: %s\n", IMG_GetError());
+	} else {
+		printf("Background loaded: %dx%d\n", background->w, background->h);
+	}
+
 	backgroundTexture = SDL_CreateTextureFromSurface(app.renderer, background);
+	if (!backgroundTexture) {
+		printf("SDL_CreateTextureFromSurface Error: %s\n", SDL_GetError());
+	} else {
+		printf("Background texture created successfully.\n");
+	}
+
 	SDL_FreeSurface(background);
 
-	logoAlpha = 0;
 
-	gotoDungeon = 0;
+    logoAlpha = 0;
+    gotoDungeon = 0;
+    tickVal = 0;
+    gotoDungeonTimer = FPS / 2;
 
-	tickVal = 0;
-
-	gotoDungeonTimer = FPS / 2;
-
-	app.delegate.logic = logic;
-	app.delegate.draw = draw;
+    app.delegate.logic = logic;
+    app.delegate.draw = draw;
 }
+
 
 static void logic(void)
 {

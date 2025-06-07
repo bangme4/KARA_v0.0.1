@@ -62,7 +62,7 @@ static void drawCongratulations(void)
 {
 	char *congratulations;
 
-	congratulations = "Congratulations! You've escaped the dungeon and bested the Dungeon Mistress at her stupid fetch quest game! She's not exactly pleased with you right now, so you'd best stay as far away from the place as possible.\n\nIn the great tradition of games from yesteryear, this ending screen is just a load of text. But here's some stats for you:";
+	congratulations = "Congrats! You found your way out of the dungeon. You can go back now.";
 
 	drawText(congratulations, SCREEN_WIDTH / 2, 50, 255, 255, 255, TEXT_ALIGN_CENTER, 1000);
 }

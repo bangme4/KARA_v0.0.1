@@ -65,6 +65,7 @@ Create a build directory:
 bash
 mkdir build
 cd build
+
 Run CMake and build the project:
 
 bash

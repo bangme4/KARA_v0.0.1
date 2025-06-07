@@ -34,7 +34,7 @@ static void touch(Entity *self, Entity *other)
 	{
 		signpost = (Signpost *)self->data;
 
-		addMessageBox("Signpost", signpost->message, 90, 70, 30);
+		addMessageBox("mail monster", signpost->message, 90, 70, 30);
 	}
 }
 

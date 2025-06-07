@@ -1,0 +1,3 @@
+/Users/iredui.b/Desktop/KARA_v0.0.1/build/CMakeFiles/kara.dir
+/Users/iredui.b/Desktop/KARA_v0.0.1/build/CMakeFiles/edit_cache.dir
+/Users/iredui.b/Desktop/KARA_v0.0.1/build/CMakeFiles/rebuild_cache.dir
